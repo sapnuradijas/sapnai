@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'Gaila';
+    src: url(/fonts/Berzulis-GAILA-Regular.ttf);
+}
+
+html,
+
+
+
+header{
+    
+    margin:0px;
+    padding: 0;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    color: rgb(189, 189, 189);
+}
+
+#rnbo-root {
+    height: 100vh;
+    width: 100vw;
+}
+#background {
+    background-color: rgb(189, 189, 189);
+    position: absolute;
+    z-index: -1; 
+}
+
+h1 {
+    margin-top:0;
+    font-family: 'Gaila', sans-serif;
+    font-size: 3em;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    
+}
+
+h2, em {
+
+    
+    width: 100%;
+    color: rgb(255, 255, 255);
+    
+}
+
+#rnbo-root {
+    margin: auto;
+    max-width: 540px;
+}
+
+#rnbo-clickable-keyboard {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#rnbo-clickable-keyboard > div {
+    margin: 2px;
+    border: solid black 1px;
+    min-height: 50px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#rnbo-clickable-keyboard > div.clicked {
+    background: #222222;
+    color: #b2b2b2;
+    margin:0px;
+    padding: 0px;
+}
+
+#rnbo-parameter-sliders {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#rnbo-parameter-sliders > div {
+    display: flex;
+}
+
+#rnbo-parameter-sliders > div > input:first-of-type {
+    flex-grow: 1;
+}
